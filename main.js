@@ -27,12 +27,13 @@ $(function() {
                 });
             }
         }
-    ); 
+    );
 });
 
 // closeボタンクリックで、時計の非表示
-$('.close').on('click', function() {
+$(document).on('click', '.close', function() {
     $('#timer').css('display', 'none');
+    console.log('aaa');
 });
 
 
